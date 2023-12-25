@@ -1,0 +1,2165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Flaynext</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .bk {
+            position: relative;
+            bottom: 5px;
+            background-color: #dcbb87;
+            height: 45px;
+            width: 160px;
+            left: 70px;
+            font-family: sans-serif;
+            font-size: 15px;
+            text-align: center;
+            margin-bottom: 20px;
+            border: solid #19232d 1px;
+
+        }
+
+        .bk:hover {
+            background-color: #19232d;
+            color: #dcbb87;
+            border: solid #dcbb87 1px;
+        }
+
+        .eli {
+            top: 0PX;
+            height: 800px;
+            width: 1400px;
+        }
+
+        .APimg {
+            height: 100px;
+            top: 380px;
+            width: 200px;
+            left: 500px;
+            position: absolute;
+            animation-name: adi;
+            animation-duration: 4s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes adi {
+            0% {
+                left: 200px;
+                height: 200px;
+                width: 300px;
+            }
+
+            25% {
+                left: 400px;
+                height: 330px;
+                width: 450px;
+            }
+
+            100% {
+                left: 550px;
+                height: 400px;
+                width: 600px;
+            }
+        }
+
+        .maintext {
+            position: absolute;
+            top: 280px;
+            left: 180px;
+        }
+
+        .h1 {
+            font-size: 70px;
+            font-family: "Playfair Display" sans-serif;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+
+        .btn1 {
+            position: relative;
+            background-color: transparent;
+            color: #dcbb87;
+            margin: 10px;
+            overflow: hidden;
+        }
+
+        .btn2 {
+            background: #19232d;
+            border: 1px solid #dcbb87;
+            color: #dcbb87;
+            border-radius: 999px;
+            text-align: center;
+            font-weight: 800;
+            padding: 12px;
+        }
+
+        .container-fluid {
+            display: block;
+            position: relative;
+            width: 100%;
+            font-family: "mulish", sans-serif;
+            background-color: white;
+            margin: 50px;
+        }
+
+
+
+        .overpic2 {
+            position: relative;
+            height: 420px;
+            width: 530px;
+            left: 654px;
+            z-index: 0;
+            border: transparent;
+            border-radius: 5%;
+        }
+
+        .ov2maindiv {
+            position: absolute;
+            top: 0px;
+            height: 420px;
+            width: 530px;
+            right: 150px;
+            z-index: 1;
+            background-color: #0b1b2ac9;
+            border: transparent;
+            border-radius: 5%;
+        }
+
+
+        .ov2div {
+            position: absolute;
+            top: 1%;
+
+        }
+
+        .ov2header {
+            position: absolute;
+            top: 40px;
+            width: 500px;
+            height: 600px;
+            margin-bottom: 20px;
+            color: white;
+            z-index: 1;
+            font-family: "mulish", sans-serif;
+        }
+
+        .sub-tital {
+            font-size: 14px;
+            margin-left: 10px;
+        }
+
+        .title {
+            font-size: 20px;
+            margin-left: 10px;
+        }
+
+        .a1 {
+            font-family: sans-serif;
+            position: relative;
+            top: 110px;
+            font-size: 18px;
+            padding: 15px 0;
+            background-color: transparent;
+            font-weight: 600;
+            border-top: 1px dashed rgb(255, 255, 255, 0.3);
+            text-align: left;
+            color: white;
+        }
+
+        .seatpic {
+            position: absolute;
+            top: 1px;
+            height: 420px;
+            width: 550px;
+            left: 90px;
+            z-index: 0;
+            border-radius: 5%;
+        }
+
+        .seatpicdiv {
+            position: absolute;
+            top: 0px;
+            height: 420px;
+            width: 550px;
+            left: 90px;
+            z-index: 1;
+            background-color: #0b1b2a48;
+            border: transparent;
+            border-radius: 5%;
+        }
+
+        .sp1 {
+            top: 230px;
+            position: absolute;
+            left: 70px;
+            font-size: 20px;
+            font-family: sans-serif;
+            color: white;
+        }
+
+        .sp2 {
+            position: absolute;
+            top: 265px;
+            left: 70px;
+            color: white;
+            font-family: sans-serif;
+            font-weight: 600;
+        }
+
+        .spbtn {
+            top: 350px;
+            position: absolute;
+            left: 50px;
+            font-family: sans-serif;
+        }
+
+        .splogo {
+            width: 25px;
+        }
+
+        .img3rd {
+            position: relative;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            font-family: sans-serif;
+            z-index: 0;
+        }
+
+        /*3rd section class's*/
+
+        .bk3rd {
+            position: absolute;
+            background-color: #0b1b2a93;
+            height: 650px;
+            width: 1340px;
+            z-index: 1;
+        }
+
+        .div33rd {
+            position: absolute;
+            background-color: #0b1b2a93;
+            height: 650px;
+            width: 775px;
+            font-size: 14px;
+            font-family: sans-serif;
+            z-index: 1;
+        }
+
+        .ele8 {
+            top: 100px;
+            position: absolute;
+            left: 1100px;
+
+        }
+
+        .up {
+            animation: up ease-in-out 2s infinite;
+
+        }
+
+        @keyframes up {
+            0% {
+                top: 100px;
+            }
+
+            100% {
+                top: 190px;
+            }
+        }
+
+        .h2-3rd {
+            position: absolute;
+            font-size: 38px;
+            top: 170px;
+            left: 100px;
+            font-family: "" Playfair Display" " serif;
+            font-weight: 600;
+        }
+
+        .p-3rd {
+            position: absolute;
+            font-size: 16px;
+            top: 270px;
+            left: 100px;
+            font-family: "" Playfair Display"" serif;
+            font-weight: 300;
+            border: transparent;
+
+        }
+
+        .book3rd {
+            position: absolute;
+            top: 410px;
+            left: 100px;
+            height: 130px;
+            width: 600px;
+            background-color: white;
+            font-family: serif;
+            border: transparent;
+        }
+
+        .span-3rd {
+            color: #dcbb87;
+            font-size: 20px;
+        }
+
+        .span2-3rd {
+            position: absolute;
+            color: white;
+            font-size: 20px;
+            top: 120px;
+            left: 100px;
+        }
+
+        .span3-3rd {
+            font-size: 30px;
+            font-family: serif;
+        }
+
+        .bookbutton3rd {
+            position: absolute;
+            background-color: #f0cb90;
+            right: 18px;
+            top: 40px;
+            border: 1px;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+
+        .playmaindiv {
+            position: relative;
+            height: 100px;
+            width: 200px;
+        }
+
+        .playbutton {
+            position: absolute;
+            top: 450px;
+            left: 965px;
+            background-color: #dcbc8770;
+            border-radius: 100%;
+            z-index: 1;
+        }
+
+        .play2div {
+            position: absolute;
+            text-align: center;
+            right: auto;
+            bottom: auto;
+            z-index: 0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr;
+            grid-template-rows: 300px;
+            position: relative;
+            left: 50px;
+        }
+
+
+        .tital4th {
+            position: absolute;
+            font-family: sans-serif;
+            font-size: 25px;
+            left: 400px;
+            color: #19232d;
+        }
+
+        .titalSub4th {
+            position: absolute;
+            font-family: sans-serif;
+            font-size: 40px;
+            left: 300px;
+            color: #19232d;
+        }
+
+        .item1 {
+            height: 300px;
+            ;
+            width: 350px;
+            grid-row: 2;
+            grid-row: 1/2;
+        }
+
+        .item2 {
+            height: 300px;
+            width: 350px;
+            grid-column: 2/3;
+        }
+
+        .item3 {
+            height: 300px;
+            width: 350px;
+            grid-column: 3/4;
+        }
+
+        .item4 {
+            height: 300px;
+            width: 350px;
+        }
+
+        .item5 {
+            height: 300px;
+            width: 350px;
+        }
+
+        .item6 {
+            height: 300px;
+            width: 350px;
+        }
+
+        .position {
+            position: absolute;
+            top: 120px;
+        }
+
+        .p-position {
+            position: absolute;
+            top: 200px;
+        }
+
+        .position2 {
+            position: absolute;
+            bottom: 100px;
+        }
+
+        .p2-position {
+            position: absolute;
+            bottom: 10px;
+        }
+
+
+        .aa:hover {
+            color: #f0cb90;
+
+        }
+
+        .div1-4th {
+            position: relative;
+            background-color: white;
+            left: 140px;
+            width: 1000px;
+            height: 100px;
+        }
+
+        .div2-5th {
+            position: absolute;
+            background-color: #19232dd2;
+            width: 1250px;
+            height: 300px;
+        }
+
+        .div95 {
+            position: absolute;
+            color: white;
+            top: 70px;
+            left: 130px;
+            font-size: 40px;
+            font-family: serif;
+            text-align: center;
+        }
+
+        .div68 {
+            position: absolute;
+            color: white;
+            top: 70px;
+            left: 449px;
+            font-size: 40px;
+            font-family: serif;
+            text-align: center;
+        }
+
+        .span95 {
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+
+        .div290 {
+            position: absolute;
+            color: white;
+            top: 70px;
+            right: 350px;
+            font-size: 40px;
+            font-family: serif;
+            text-align: center;
+        }
+
+        .div195 {
+            position: absolute;
+            color: white;
+            top: 70px;
+            right: 140px;
+            font-size: 40px;
+            font-family: serif;
+            text-align: center;
+        }
+
+        .fix {
+            position: relative;
+            top: 490px;
+            height: 60px;
+            width: 30px;
+            position: fixed;
+            color: white;
+            background-color: #dcbb87;
+            font-size: 10px;
+            right: 30px;
+            font-family: sans-serif;
+            padding: 10px 6px;
+            text-align: center;
+            transition: all 1s;
+            z-index: 3;
+        }
+
+        .fix2 {
+            top: 250px;
+            height: 200px;
+            width: 50px;
+            position: absolute;
+            position: fixed;
+            color: #19232d;
+            background-color: #dcbb87;
+            right: 1px;
+            font-family: sans-serif;
+            padding: 10px 6px;
+            text-align: center;
+            transition: all 1s;
+            z-index: 3;
+        }
+
+        .navposition {
+            position: relative;
+            bottom: 20px;
+            right: 60px;
+        }
+
+
+        .drop {
+            top: 10px;
+            position: absolute;
+            background-color: #19232d;
+            justify-content: end;
+
+        }
+
+        .drop2 {
+            bottom: 10px;
+            position: relative;
+            background-color: #19232d;
+            justify-content: end;
+        }
+
+        .drop3 {
+            position: relative;
+            bottom: 10px;
+        }
+
+        .container-fluid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            margin-top: 200px;
+            margin-bottom: 300px;
+            right: 30px;
+        }
+
+
+        .itam1 {
+            grid-row: 1;
+            grid-column: 1/2;
+            height: 200px;
+            width: 200px;
+        }
+
+        .sec4-hover:hover {
+            box-shadow: 0px 0px 10px 9px rgba(0, 0, 0, 0.363);
+        }
+
+        .itam2 {
+            grid-column: 2/3;
+            height: 200px;
+            width: 200px;
+        }
+
+        .itam3 {
+            grid-column: 3/4;
+            height: 200px;
+            width: 200px;
+        }
+
+        .itam4 {
+            grid-column: 4/5;
+            height: 200px;
+            width: 200px;
+        }
+
+        .itam5 {
+            grid-column: 5/6;
+            height: 200px;
+            width: 200px;
+        }
+
+
+        .latestdiv {
+            position: relative;
+            text-align: center;
+            left: 450px;
+            width: 400px;
+
+        }
+
+        .comments {
+            color: rgba(0, 0, 0, 0.473);
+            font-family: sans-serif;
+            font-size: 15px;
+        }
+
+        .comments2 {
+            color: #19232d;
+            font-family: sans-serif;
+            font-size: 15px;
+        }
+
+        .commentposition {
+            position: relative;
+            left: 80px;
+
+        }
+
+        .container {
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .top-area {
+            position: relative;
+            margin-bottom: 40px;
+            margin-top: 40px;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .top-area2 {
+            position: absolute;
+            top: 1px;
+            left: 160px;
+            margin-bottom: 40px;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        .flex-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-end;
+        }
+
+        .div1lastpart {
+            position: relative;
+            overflow: hidden;
+            background-color: #19232d;
+            margin: 15px;
+        }
+
+        .divarea {
+            font-family: sans-serif;
+            color: white;
+            font-size: 15px;
+            width: 300px;
+            height: 300px;
+        }
+
+        .lestsubtital {
+            font-size: 20px;
+            position: relative;
+            font-family: sans-serif;
+            color: #dcbb87;
+            left: 40px;
+        }
+
+        .lastsecbox {
+            position: relative;
+            width: 900px;
+            height: 500px;
+            border: solid 2px #dcbb87;
+            border-radius: 25%;
+            background-color: #19232d;
+            margin-bottom: 300px;
+        }
+
+        .lastdiv1 {
+            position: relative;
+            height: 600px;
+            width: 1330px;
+            bottom: 15px;
+            background-color: #19232d;
+
+        }
+
+        .lastdiv2 {
+            position: absolute;
+            border: solid 2px #dcbb87;
+            height: 350px;
+            width: 1000px;
+            left: 150px;
+        }
+
+        .tital4 {
+            position: absolute;
+            color: white;
+            margin-bottom: 10px;
+            font-family: sans-serif;
+            font-size: 17px;
+            border-bottom: #dcbb87 solid 2px;
+            left: 60px;
+            top: 60px;
+        }
+
+        .ullist {
+            position: absolute;
+            height: 100px;
+            width: 200px;
+            top: 90px;
+            left: 20px;
+        }
+
+        .linklast {
+            color:white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 17px;
+            text-decoration: none;
+        }
+
+        .linklast2 {
+            color:white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 15px;
+            text-decoration: none;
+
+        }
+
+        .divposition {
+            position: absolute;
+            left: 220px;
+        }
+
+        .divposition2 {
+            position: absolute;
+            left: 500px;
+        }
+
+        .divposition3 {
+            position: absolute;
+            left: 650px;
+            width: 350px;
+        }
+
+        .plast {
+            position: absolute;
+            font-size: 15px;
+            top: 100px;
+            left: 50px;
+        }
+
+        .lastform {
+            position: absolute;
+            top: 180px;
+            width: 250px;
+            left: 50px;
+        }
+
+        .sub-us-btn {
+            position: absolute;
+            color: #19232d;
+            background-color: #dcbb87;
+            height: 40px;
+            width: 250px;
+        }
+
+        .b:hover {
+            transition: transform;
+            color: #dcbb87;
+            translate: 5px;
+        }
+
+        .sub-us-btn1:hover {
+            transition: transform;
+            background-color: #19232d;
+            color: #dcbb87;
+        }
+
+        .titalcard:hover {
+            transition: transform;
+            color: #dcbb87;
+        }
+
+        .btn1web:hover {
+            transition: transform;
+            background-color: #dcbb87;
+            color: #19232d;
+        }
+
+        .form2div {
+            position: absolute;
+            height: 500px;
+            width: 1100px;
+            background-color: #19232de0;
+            left: 1px;
+        }
+
+        .formtextdiv {
+            position: absolute;
+            color: white;
+            text-align: center;
+            left: 350px;
+            width: 400px;
+        }
+
+        .formdivbtn {
+            position: absolute;
+            color: white;
+            font-family: serif;
+            border: 1px solid #dcbb87;
+            width: 150px;
+        }
+
+        .formdiv {
+            position: absolute;
+            color: white;
+            font-family: serif;
+            top: 250px;
+            left: 200px;
+            width: 150px;
+        }
+
+        .todiv {
+            position: absolute;
+            color: white;
+            font-family: serif;
+            top: 250px;
+            left: 400px;
+            width: 150px;
+        }
+
+        .datediv {
+            position: absolute;
+            color: white;
+            font-family: serif;
+            top: 250px;
+            left: 600px;
+            width: 150px;
+        }
+
+        .no-div {
+            position: absolute;
+            color: white;
+            font-family: serif;
+            top: 250px;
+            left: 800px;
+            width: 150px;
+        }
+
+        .form-book-btn {
+            position: absolute;
+            color: #19232d;
+            font-family: serif;
+            background-color: #dcbb87;
+            border: #dcbb87 1px solid;
+            text-align: center;
+            top: 400px;
+            left: 500px;
+            width: 150px;
+            height: 40px;
+        }
+
+        .book-btn:hover {
+            transition: transform;
+            background-color: #19232d;
+            color: #dcbb87;
+            border: 1px solid #dcbb87;
+        }
+
+        .plane-rotate:hover {
+            transition: transform;
+            rotate: 45deg;
+        }
+
+        .buttonposition {
+            position: relative;
+            top: 550px;
+            width: 100px;
+            right: 400px;
+
+        }
+
+        .B-F-btn {
+            position: relative;
+            border: 2px solid #dcbb87;
+            border-radius: 100%;
+            height: 50px;
+            width: 50px;
+        }
+
+        .imgp-position {
+            position: relative;
+            left: 700px;
+        }
+
+        .clint-pic {
+            position: absolute;
+            left: 180px;
+            top: 2px;
+        }
+
+        .clint-div-position {
+            position: absolute;
+            left: 1px;
+        }
+
+        .clint-div-position2 {
+            position: absolute;
+            left: 370px;
+        }
+
+        .ring {
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            left: 988px;
+            top: 473px;
+            border: solid 2px #f0cb90;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            animation: ring ease-in-out 2s infinite;
+        }
+
+        @keyframes ring {
+            0% {
+                height: 30px;
+                width: 30px;
+                opacity: 0.1;
+            }
+
+            20% {
+                height: 40px;
+                width: 40px;
+                opacity: 0.9;
+            }
+
+            100% {
+                height: 110px;
+                width: 110px;
+                opacity: 0.1;
+            }
+        }
+
+        .ring2 {
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            left: 988px;
+            top: 473px;
+            border: solid 2px #f0cb90;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            animation: ring2 ease-in-out 2.5s infinite;
+        }
+
+        @keyframes ring2 {
+            0% {
+                height: 30px;
+                width: 30px;
+                opacity: 0.1;
+            }
+
+            20% {
+                height: 40px;
+                width: 40px;
+                opacity: 0.9;
+            }
+
+            100% {
+                height: 115px;
+                width: 115px;
+                opacity: 0.1;
+            }
+        }
+
+
+
+
+        .ring3 {
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            left: 156px;
+            top: 145px;
+            z-index: 5;
+            border: solid 2px white;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            animation: ring3 ease-in-out 1.2s infinite;
+        }
+
+        @keyframes ring3 {
+            0% {
+                height: 70px;
+                width: 70px;
+                opacity: 0.1;
+            }
+
+            20% {
+                height: 90px;
+                width: 90px;
+                opacity: 0.9;
+            }
+
+            100% {
+                height: 119px;
+                width: 119px;
+                opacity: 0.1;
+            }
+        }
+
+        .ring4 {
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            left: 156px;
+            top: 145px;
+            z-index: 5;
+            border: solid 2px white;
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            animation: ring4 ease-in-out 1s infinite;
+        }
+
+        @keyframes ring4 {
+            0% {
+                height: 70px;
+                width: 70px;
+                opacity: 0.1;
+            }
+
+            20% {
+                height: 90px;
+                width: 90px;
+                opacity: 0.9;
+            }
+
+            100% {
+                height: 145px;
+                width: 145px;
+                opacity: 0.1;
+            }
+        }
+
+
+        .play-img {
+            position: absolute;
+            z-index: 4;
+            top: 110px;
+            left: 120px;
+            color: #f0cb90;
+            background-color: white;
+            border-radius: 50%;
+            height: 70px;
+            width: 70px;
+            padding: 20px;
+        }
+
+        .modal-img {
+            position: absolute;
+            z-index: 2;
+        }
+        .side-form-slide .book-form .book-select::after {
+    color: #19232d;
+}
+.nice-select::after {
+    height: 8px;
+    width: 8px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+}
+.nice-select:after {
+    border-bottom: 2px solid #999;
+    border-right: 2px solid #999;
+    content: '';
+    display: block;
+    height: 5px;
+    margin-top: -4px;
+    pointer-events: none;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    -webkit-transform-origin: 66% 66%;
+    -ms-transform-origin: 66% 66%;
+    transform-origin: 66% 66%;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+    width: 5px;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.side-fix-btn-div .open .side-fix-btn .sing::after {
+    border-top: none;
+    border-left: none;
+    border-bottom: 3px solid #19232d;
+    border-right: 3px solid #19232d;
+    margin-top: -10px;
+}
+ .side-fix-btn-div .side-fix-btn .sing::after {
+    border-top: 3px solid #19232d;
+    border-left: 3px solid #19232d;
+    content: '';
+    display: block;
+    height: 14px;
+    margin-top: -3px;
+    pointer-events: none;
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+    width: 14px;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.side-fix-btn-div {
+    position: fixed;
+    z-index: 5;
+    top: 50%;
+    transform: translateY(-50%) translateX(900px);
+    right: 0;
+    width: 900px;
+    margin-right: 0;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    padding: 50px 30px;
+    transition: all 0.5s;
+    background-color: #1F2E3C;
+}
+.side-fix-btn-div.open {
+    transform: translateY(-50%) translateX(0);
+}
+.side-fix-btn-div .side-fix-btn{
+    position: absolute;
+    top: 42%;
+    left: -125px;
+    background-color: #FFF8EE;
+    transform: rotate(-90deg);
+    color: #19232d;
+    font-weight: 700;
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    height: 40px;
+    transition: all 0.5s;
+}
+
+.side-fix-btn-div .side-fix-btn .num{
+padding: 10px 27px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.side-fix-btn-div .side-fix-btn .sing{
+    width: 50px;
+    height: 100%;
+    background-color: #dcbb87;
+    position: relative;
+}
+.book-form .book-form-icon {
+    position: absolute;
+    top: 45px;
+    left: 25px;
+    color: #dcbb87;
+    z-index: 9;
+    font-size: 18px;
+}
+.book-form .book-select {
+    line-height: 24px;
+}
+
+.side-form-slide .book-form .form--control {
+    color: #19232d;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.book-form .form--control {
+    border: 1px solid #dcbb87;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 14px;
+    padding-left: 35px;
+    font-family: "Mulish", sans-serif;
+    font-weight: 500;
+}
+
+.nice-select .current {
+    display: block;
+    color: white;
+}
+
+.nice-select .list {
+    background-color: white;
+    box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.11);
+    box-sizing: border-box;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transform: scale(0.75) translateY(-21px);
+    transform: scale(0.75) translateY(-21px);
+    -webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+    transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+    z-index: 9;
+    min-height: 50px;
+    max-height: 200px;
+}
+
+.nice-select .option .selected {
+    font-weight: bold;
+}
+.nice-select .option {
+    cursor: pointer;
+    font-weight: 700;
+    line-height: 40px;
+    list-style: none;
+    min-height: 40px;
+    outline: none;
+    color: #19232d;
+    padding-left: 18px;
+    padding-right: 29px;
+    text-align: left;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    font-size: 14px;
+}
+.side-form-slide .book-form .book-select::after {
+    color: #19232d;
+}
+.nice-select::after {
+    height: 8px;
+    width: 8px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+}
+
+.nice-select:after {
+    border-bottom: 2px solid #999;
+    border-right: 2px solid #999;
+    content: '';
+    display: block;
+    height: 5px;
+    margin-top: -4px;
+    pointer-events: none;
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    -webkit-transform-origin: 66% 66%;
+    -ms-transform-origin: 66% 66%;
+    transform-origin: 66% 66%;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all 0.15s ease-in-out;
+    transition: all 0.15s ease-in-out;
+    width: 5px;
+}
+
+.icon-call-icon:before {
+    content: "\e915";
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+.call-widget-wrapper .call-widget-btn i {
+    color: #dcbb87;
+    font-size: 18px;
+    margin-right: 8px;
+}
+    </style>
+</head>
+
+<body style="overflow-x: hidden;">
+
+    <!--navbar section-->
+
+    <div class="container-flex" style="background-image: url(element-1.png); background-size: 100%; background-color: #19232d; height: 800px;">
+        <div class="navbar"></div>
+        <nav class="navbar navbar-expand-sm navposition">
+            <div class="container" style="background-color: #19232d;">
+                <a class="navbar-brand mb-5 me-5"> <img src="logo-fly.png"></a>
+                <button type="button" data-toggler="collapse" data-bs-target="#adi" class="navbar-toggler"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="adi">
+
+                    <ul class="navbar-nav gap-3 ms-5 fw-bold mt-3">
+                        <li class="nav-item">
+                            <div class="btn-dropdown drop2">
+                                <div class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                    <a href="https://themeim.com/demo/flynext/index.html"
+                                        class="nav-link fw-bold link-light">Home</a>
+                        </li>
+                        <ul class="dropdown-menu">
+                            <li> <a href="#" class="dropdown-item">Home one </a></li>
+                            <li> <a href="#" class="dropdown-item">Home two</a></li>
+                            <li> <a href="#" class="dropdown-item">Home dark</a></li>
+                        </ul>
+                        <li class="nav-item mt-2 drop3"><a href="https://themeim.com/demo/flynext/about.html"
+                                class="nav-link link-light"> About us</a></li>
+                        <li class="nav-item">
+                            <div class="btn-dropdown drop2">
+                                <div class="btn dropdown-toggle" data-bs-toggle="dropdown">
+                                    <a href="https://themeim.com/demo/flynext/about.html"
+                                        class="fw-bold nav-link link-light">Page</a>
+                                    <ul class="dropdown-menu">
+                                        <li> <a href="#" class="dropdown-item">Service</a>
+                                        <li> <a href="#" class="dropdown-item"> Service Details </a> </li>
+                                        <li> <a href="#" class="dropdown-item">Deals</a></li>
+                                        <li> <a href="#" class="dropdown-item"> Deals Details</a> </li>
+                                        <li> <a href="#" class="dropdown-item"> Package </a> </li>
+                                        <li> <a href="#" class="dropdown-item"> package Details </a> </li>
+                                        <li> <a href="#" class="dropdown-item"> Our course </a> </li>
+                                        <li> <a href="#" class="dropdown-item"> course details </a> </li>
+                                        <li> <a href="#" class="dropdown-item"> Our team </a> </li>
+                                        <li> <a href="#" class="dropdown-item">Team Detail</a> </li>
+                                        <li> <a href="#" class="dropdown-item">FAQ </a> </li>
+                                        <li> <a href="#" class="dropdown-item">Sign Up </a> </li>
+                                    </ul>
+                        <li class="nav-item">
+                            <div class="btn-dropdown drop2">
+                                <div class="btn dropdown-toggle" data-bs-toggle="dropdown"><a href="#"
+                                        class="fw-bold nav-link link-light">Blog</a>
+                                    <ul class="dropdown-menu">
+                                        <li> <a href="#" class="dropdown-item">Blog</a> </li>
+                                        <li> <a href="#" class="dropdown-item">Blog classic</a> </li>
+                                        <li> <a href="#" class="dropdown-item">Blog Details </a> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a href="https://themeim.com/demo/flynext/faq.html"
+                                class="nav-link link-light">Faq</a></li>
+                        <li class="nav-item"><a href="https://themeim.com/demo/flynext/contact.html"
+                                class="nav-link link-light"><span>Contect Us</span></a></li>
+                        <li class="nav-item"><a href="https://themeim.com/demo/flynext/contact.html"
+                                class="nav-link link-light"><img src="icons8-magnifier-50.png" class="w-50"></a></li>
+                        
+                        <!--navbar book now button section -->
+                    </ul>
+                    <button class="bk border pb-4 ms-4 rounded-5">
+                        <a class="btn fw-bold pt-2" href="https://themeim.com/demo/flynext/service-details.html"><span
+                                class="plane-rotate">✈</span> Book
+                            Now</a>
+                    </button>
+                </div>
+        </nav>
+
+        <!---fixed element (top)-->
+        <div class="fix rounded-5" onclick="topFunction()">
+            <img class="me-2" src="icons8-play-button-24.png" width="20px">
+            <span class="me-2">Top</span>
+        </div>
+
+
+    <div class="side-fix-btn-div">
+        <button type="button" class="side-fix-btn" fdprocessdid="ovc0n8">
+            <span class="num"><i class="icon-call-icon"></i>+18149294263</span>
+            <span class="sing"></span>
+        </button>
+        <div class="side-form-slide">
+            <form class="book-form">
+                <div class="row justify-content-center mb-20-none">
+                    <div class="book-select">
+                        <label>form</label>
+                        <div class="book-form-icon"></div>
+                        <select class="book-select form--control" style="display: none;">
+                        <option value="Dhaka"> Dhaka</option>
+                        <option value="London">London</option>
+                        </select>
+                        <div class="nice-select book-select form--control" tabindex="0">
+                            <span class="current">Dhaka</span>
+                            <ul class="list">
+                                <li data-value="Dhaka" class="option selected">Dhaka</li>
+                                <li  data-value="London" class="option">London</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+     
+
+
+
+        <!--animation section-->
+        <div class=""><img src="element-2.png" class="APimg"></div>
+
+        <div class="maintext" style="color: white;">
+            <div class="h3 fst-italic fw-bold"><span
+                    style="color: #dcbb87; font-size: 30px; font-family: sans-serif; z-index: 1;">Fly</span>next</div>
+            <h1 class="fw-bold h1"> Book a private <br>jet instantly</h1>
+            <p class="fw-bold lh-md">Curly Airline proudly raises the bar and exceeds<br>standard for luxury and
+                corporate private jet<br>
+                charter services. We pride ourselves on offering<br> a professional service.</p>
+            <div class="btn1 btn">
+                <a class="btn h3 btn2 fw-bold sub-us-btn1 btn1web"
+                    href="https://themeim.com/demo/flynext/package-details.html"> > Make Your
+                    Trip</a>
+                <a class="btn h3 ms-3 fw-bold link-light b" href="https://themeim.com/demo/flynext/contact.html">Request
+                    Quote ➜</a>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!--2nd section-->
+
+    <div class="container-fluid lh-md gap-5">
+
+        <div><img class="overpic2 col-md-6" src="overview-2.png"></div>
+        <div><img class="seatpic col-md-6" src="seatpic.png"></div>
+        <div class="ov2maindiv col-md-6 col-sm-6">
+            <div class="ov2div">
+                <div class="ov2header">
+                    <span class="sub-tital fw-bold mt-3"> <span style="color: #f0cb90;">#1</span> Private jet charter
+                    </span>
+                    <h3 class="title mt-2">Find the Best Service For You</h3>
+
+                </div>
+                <button class="a1 title btn  fw-medium"> <- Private Jat charter</button>
+                        <br>
+                        <button class="a1 title btn  fw-medium"><span class=" fw-medium">02</span> Business Jet
+                            charter</button>
+                        <br>
+                        <button class="a1 title btn fw-medium"><span class=" fw-medium">03</span> Private
+                            Helicopter</button>
+                        <br>
+                        <button class="a1 title btn fw-medium"><span class=" fw-medium">04</span> Air Ambulance</button>
+            </div>
+        </div>
+
+        <div class="seatpicdiv">
+            <h2 class="sp1 text-light fw-bold"> Private Jat charter</h2>
+            <blockquote>
+                <p class="fw-medium sp2">Trade crowded airports and wasted time for the<br> ease, comfort, and
+                    convenience of travel by private<br> jet.</p>
+            </blockquote>
+            <div class="btn spbtn gap-2">
+                <div><a href="https://themeim.com/demo/flynext/service-details.html"><span><img class="splogo"
+                                src="icons8-airline-64 (2).png"></span><span class="fw-bold" style="color:#f0cb90;">Book
+                            Now</span></a></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--3rd section-->
+
+    <div class="container-flex img3rd" style="background-image: url(bg-2.png);height:650px;">
+        <div class="bk3rd">
+            <img src="element-8.png" class="ele8 up">
+            <div class="div33rd">
+                <div class="span2-3rd fw-medium"> <span class="span-3rd">About </span>Flynext</div>
+
+                <h2 class="h2-3rd fw-bold text-light">Private Jet charters save your time<br> amd give more comfort</h2>
+                <p class="p-3rd fw-medium text-light mt-3">Flynext is the only way to fully travel on your terms.
+                    Whether it’saccessing a remote <br>destination or taking back control of productivity and flight
+                    scheduling </p>
+
+                <div class="book3rd fw-medium" style="background-image: url(element-7.png);">
+                    <h3 class="fw-bold mt-4 ms-4">Call for book an order</h3>
+                    <span class="span3-3rd fw-bold ms-4 ">8-800-10-500</span>
+                    <div class="bookbutton3rd btn fw-bold rounded-5"><img class="me-2 mb-1"
+                            src="icons8-plane-50 darkblue.png" width="20px">Book Now</div>
+
+                </div>
+
+                <div class="playmaindiv">
+                    <div class="play2div">
+                        <div class="">
+                            <a href="https://www.youtube.com/embed/Hw4ctvV25H0"><img class="playbutton" width="45px"
+                                    src="icons8-play-24.png">
+                                <div class="ring">
+                                </div>
+                                <div class="ring2"></div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--4th section-->
+    <div class="div1-4th">
+        <div class="tital4th mb-5 fw-bold">Discover <span style="color: #dcbb87;">Flynext</span> Benefits</div>
+        <h2 class="fw-bold titalSub4th mb-5 mt-5">Discover Private Jet Benefits</h2>
+    </div>
+
+    <div class="container mb-5 mt-5">
+        <div class="item1 btn sec4-hover">
+            <div class="iocon1 aa"><img src="icons8-earth-globe-64.png"></div>
+            <h4 class="m-3 fw-bold position">Luxury & Comfort Travel</h4>
+            <p class="p-position ms-2 fw-medium">As well as getting to fly to many different<br> destinations as part of
+                their job, airplane<br> pilots get big discounts on money</p>
+        </div>
+
+
+        <div class="item2 btn sec4-hover">
+            <div class="iocon1"><img src="icons8-us-dollar-circled-50.png" width="60px"></div>
+            <h4 class="m-3 ms-5 fw-bold position">Smart Costing Flight</h4>
+            <p class="p-position ms-3 fw-medium">
+                Flying should be a pleasure and we’ll <br>make your charter experience <br>as luxurious and more
+                comfortable
+                <br>as soon as possible.
+            </p>
+        </div>
+
+
+        <div class="item3 btn sec4-hover">
+            <div class="iocon1"><img src="icons8-radio-50.png"></div>
+            <h4 class="m-3 ms-5 fw-bold position">Career progression</h4>
+            <p class="p-position ms-5 fw-medium">
+                The first small jet-powered civil<br> aircraft was the Morane-Saulnier<br> MS.760 Paris, developed
+                <br>privately since 1940s
+            </p>
+        </div>
+
+
+        <div class="item4 btn sec4-hover">
+            <div class="iocon1"><img src="icons8-calendar-plus-50.png"></div>
+            <h4 class="mb-5 fw-bold ms-5 position2">Flexible Schedule</h4>
+            <p class="p2-position ms-3 mt-2 fw-medium">
+                Our technology consistently delivers<br> the best pricing for charters – and the<br> unique ability to
+                buy individual seats<br> all over the world.</p>
+        </div>
+
+
+        <div class="item5 btn sec4-hover">
+            <div class="iocon1 "><img src="icons8-horn-64.png"></div>
+            <h4 class="mb-5 fw-bold ms-5 position2">Excellent advantages</h4>
+            <p class="p2-position ms-5 mt-2 fw-medium">
+                Search the world with ease and <br>transparency.As the only tech-<br>forward private aviation company,
+                <br>XO is able to bring you
+            </p>
+        </div>
+
+        <div class="item6 btn sec4-hover">
+            <div class="iocon1"><img src="icons8-ski-goggles-100.png"></div>
+            <h4 class="fw-bold mb-5 ms-5 position2">Coolest Environment</h4>
+            <p class="p2-position mt-2 ms-4 fw-medium">
+                Charter an entire jet, or offer the seats<br> you don’t need through our app a<br> need for full or even
+                fractional jet<br> ownership</p>
+        </div>
+    </div>
+    <div class="m-5">
+        <div style="background-image: url(element-2.png); width: 1200px; height: 300px; left: 250px;">
+            <div class="div2-5th">
+                <div class="fw-bold div95 ">95 <br><span class="span95 mt-4 fw-medium">Professional Pilots</span></div>
+                <div class="fw-bold div68">68<br><span class="span95 mt-4 fw-medium">Jet Airplanes </span></div>
+                <div class="fw-bold div290">290 <br><span class="span95 mt-4 fw-medium">World Airports </span></div>
+                <div class="fw-bold div195">195 <br><span class="span95 mt-4 fw-medium">Directions</span></div>
+
+            </div>
+        </div>
+    </div>
+    <!---Luxury Charters-->
+    <div class="gap-2 ms-5 ps-5 mb-5">
+        <blockquote>
+            <h4 class="fw-bold"><span style="color:#19232d;">Luxury Charters</span></h4>
+        </blockquote>
+        <h1 class="fw-bold">Luxury Deals For You</h1>
+    </div>
+    <div class="row ms-5 m-5 mb-5 pb-5">
+        <div class="col-md-3">
+            <div class="card" style="width: 278px; left: 40px;">
+                <img src="charter-2.png" class="card-img-top">
+                <div class="card-body">
+                    <blockquote>
+                        <h4 class="card-title titalcard">Business Jet Charter</h4>
+                    </blockquote>
+                    <p class="comments ms-3"><span>Beech BE300 Super King </span></p>
+                    <p class="comments2 fw-medium border-bottom">8-14 Seats <span class="commentposition">Price;
+                            $9,009/hr</span></p>
+
+
+                    <div class="btn b">
+                        <a class="btn h3 ms-1 fw-bold" style="color: #19232d;"
+                            href="https://themeim.com/demo/flynext/blog-details.html"><img src="icons8-plane- 50.png"
+                                width="15px">Book Now
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card" style="width: 280px; left: 50px;">
+                <img src="charter-3.png" class="card-img-top">
+                <div class="card-body">
+                    <blockquote>
+                        <h4 class="card-title titalcard">Private Helicopter</h4>
+                    </blockquote>
+                    <p class="comments ms-3"><span>charter a A500 </span></p>
+                    <p class="comments2 fw-medium border-bottom">8-14 Seats <span class="commentposition">Price;
+                            $9,009/hr</span></p>
+                    <div class="btn b">
+                        <a class="btn h3 ms-1 fw-bold" style="color: #19232d;"
+                            href="https://themeim.com/demo/flynext/blog-details.html"><img src="icons8-plane- 50.png"
+                                width="15px">Book Now
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-3">
+            <div class="card" style="width: 280px; left:55px;">
+                <img src="charter-1.png" class="card-img-top">
+                <div class="card-body">
+                    <blockquote>
+                        <h4 class="card-title titalcard">Private Jet charter</h4>
+                    </blockquote>
+                    <p class="comments ms-3"><span>legacy 600</span></p>
+                    <p class="comments2 fw-medium border-bottom">8-14 Seats <span class="commentposition">Price;
+                            $9,009/hr</span></p>
+                    <div class="btn b">
+                        <a class="btn h3 ms-1 fw-bold" style="color: #19232d;"
+                            href="https://themeim.com/demo/flynext/blog-details.html"><img src="icons8-plane- 50.png"
+                                width="15px">Book Now
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-3">
+            <div class="card" style="width: 280px; left: 60px;">
+                <img src="charter-4.png" class="card-img-top">
+                <div class="card-body">
+                    <blockquote>
+                        <h4 class="card-title titalcard">Air Ambulance</h4>
+                    </blockquote>
+                    <p class="comments ms-3"><span>Beech BE300 Super King</span></p>
+                    <p class="comments2 fw-medium border-bottom">8-14 Seats <span class="commentposition">Price;
+                            $9,009/hr</span></p>
+                    <div class="btn b">
+                        <a class="btn h3 ms-1 fw-bold" style="color: #19232d;"
+                            href="https://themeim.com/demo/flynext/blog-details.html"><img src="icons8-plane- 50.png"
+                                width="15px">Book Now
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+
+    <!--form section -->
+    <div class="container-fluid">
+        <div class="container rounded-3"
+            style="background-image: url(bg-3.png); width: 1100px; height: 500px; left: 120px;">
+            <div class="container form2div rounded-3">
+                <div class="formtextdiv gap-2 mt-5 ">
+                    <blockquote>
+                        <h4 class="fw-bold"><span style="color: #dcbb87;">Flaynext</span> Book</h4>
+                    </blockquote>
+                    <h2 class="fw-medium">Book A Personal Flight</h2>
+                </div>
+
+                <div class="formdiv">
+                    <p class="fw-medium">Form</p>
+                    <div class="formdivbtn">
+                        <div class=" btn-dropdown">
+                            <div class="btn dropdown-toggle text-light fw-medium" data-bs-toggle="dropdown"><img
+                                    src="icons8-plane- 50.png" width="15px"> London</div>
+                            <ul class="dropdown-menu">
+
+                                <li> <a href="#" class="dropdown-item">London</a>
+                                </li>
+                                <li> <a href="#" class="dropdown-item">Dhaka</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="todiv">
+                    <p class="fw-medium">To</p>
+                    <div class="formdivbtn">
+                        <div class=" btn-dropdown">
+                            <div class="btn dropdown-toggle text-light fw-medium" data-bs-toggle="dropdown"><img
+                                    class="me-2" src="icons8-plane- 50.png" width="17px"> Dhaka</div>
+                            <ul class="dropdown-menu">
+
+                                <li> <a href="#" class="dropdown-item">London</a>
+                                </li>
+                                <li> <a href="#" class="dropdown-item">Dhaka</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="datediv">
+                    <p class="fw-medium">Date</p>
+                    <div class="formdivbtn">
+                        <div class=" btn-dropdown">
+                            <div class="btn dropdown-toggle text-light fw-medium" data-bs-toggle="dropdown"><img
+                                    class="me-2" src="icons8-plane- 50.png" width="17px">25/9/23</div>
+                            <ul class="dropdown-menu">
+                                <li> <a href="#" class="dropdown-item">26/9/23</a>
+                                </li>
+                                <li> <a href="#" class="dropdown-item">27/9/23</a> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="no-div">
+                    <p class="fw-medium">Passanger</p>
+                    <div class="formdivbtn">
+                        <div class=" btn-dropdown">
+                            <div class="btn dropdown-toggle text-light fw-medium">-<span
+                                    class="ms-5 me-5 fw-medium">1</span>+</div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn form-book-btn book-btn fw-bold rounded-5">
+                    <div class="fw-bold"><img class="me-2 plane-rotate" src="icons8-plane-50 darkblue.png"
+                            width="15px">Book Now</div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!--Flynext Package
+Flynext Tour Packages-->
+    <div class="container-flex"
+        style="background-image: url(element-24.png); width: 1340px; height: 800px; background-color: #19232d;">
+
+        <div class="latestdiv gap-1 pb-5 mb-5">
+            <blockquote>
+                <h4 class="fw-bold text-light"><span style="color: #dcbb87; top: 20px;">Flaynext</span>Package</h4>
+            </blockquote>
+            <h1 class="fw-bold text-light" style="width: 450px;">Flynext Tour Packages</h1>
+        </div>
+
+
+        <div class="row ms-5 mb-5 pb-5">
+            <div class="col-md-3">
+                <div class="card shadow" style="width: 300px; left:50px;">
+                    <img src="package-9.png" class="card-img-top">
+                    <div class="card-body">
+                        <blockquote>
+                            <h4 class="card-title titalcard">Island of the Goods</h4>
+                        </blockquote>
+                        <p class="card-text">Date:Thursday,Now 4, 2023</p>
+                        <p class="card-text">Person:4 Adults</p>
+
+                        <div class="btn b">
+                            <a class="btn h3 ms-1 fw-bold" style="color: #19232d;"
+                                href="https://themeim.com/demo/flynext/blog-details.html">
+                                <img class="me-2 plane-rotate" src="icons8-plane- 50.png" width="15px">Book Now <img
+                                    class="ms-5" src="icon-17.png" width="30px">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="card shadow" style="width: 300px; left: 110px;">
+                    <img src="package-10.png" class="card-img-top">
+                    <div class="card-body">
+                        <blockquote>
+                            <h3 class="card-title titalcard">Desert of the Goods</h3>
+                        </blockquote>
+                        <p class="card-text">Date:Thursday,Now 4, 2023</p>
+                        <p class="card-text">Person:2 Adults</p>
+
+                        <div class="btn b">
+                            <a class="btn h3 ms-1 fw-bold" style="color:#19232d;"
+                                href="https://themeim.com/demo/flynext/blog-details.html">
+                                <img class="me-2 plane-rotate" src="icons8-plane- 50.png" width="15px">Book Now<img
+                                    class="ms-5" src="icon-17.png" width="30px">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-md-3">
+                <div class="card shadow" style="width: 290px; left:170px;">
+                    <img src="package-11.png" class="card-img-top">
+                    <div class="card-body">
+                        <blockquote>
+                            <h3 class="card-title titalcard">City of the Goods</h3>
+                        </blockquote>
+                        <p class="card-text">Date:Thursday,Now 4, 2023</p>
+                        <p class="card-text">Person:2 Adults</p>
+
+                        <div class="btn b">
+                            <a class="btn h3 ms-1 fw-bold" style="color: #19232d;"
+                                href="https://themeim.com/demo/flynext/blog-details.html">
+                                <img class="me-2 plane-rotate" src="icons8-plane- 50.png" width="15px">Book Now<img
+                                    class="ms-5" src="icon-17.png" width="30px">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttonposition gap-2">
+                <i class="fw-bold B-F-btn"><img class="mb-1" src="icons8-back-30.png" width="30px" height="30px"></i>
+                <i class="fw-bold B-F-btn"><img class="mb-1" src="icons8-back-30 - Copy.png" width="30px"
+                        height="30px"></i>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!--coustomer feedback section-->
+    <div class="div1-4th mt-4">
+
+        <div class="tital4th mb-5 mt-2 ms-2 fw-bold"><span style="color: #dcbb87;">Flynext</span>Testimonial</div>
+        <h2 class="fw-bold titalSub4th mb-5 mt-5 me-5">Our Customer FeedbackOur</h2>
+    </div>
+    <div class="container mt-3" style="background-image: url(map.png); width: 1000px;">
+
+        <div class="cil-md-3 clint-div-position">
+            <div class="card  shadow" style="width:325px;">
+                <div class="m-5"><img src="quote.png" width="50px"><img class="clint-pic" src="client-4.png"
+                        class="card-img-top" width="100px"></div>
+
+                <div class="card-body">
+                    <p class="card-text">we teach martial arts because we love it-<br>not because we want to make money
+                        on<br>you</p>
+
+                    <h4 class="card-title titalcard">Andru Smith</h4>
+
+                    <div class="btn">
+                        <p class="pe-5">Marketing Manager</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 clint-div-position2">
+            <div class="card  shadow" style="width: 325px;">
+                <div class="m-5"> <img src="quote.png" width="50px"><img class="clint-pic" src="client-3.png"
+                        class="card-img-top" width="110px"></div>
+                <div class="card-body">
+                    <p class="card-text">we teach martial arts because we love it-<br>not because we want to make money
+                        on<br>you</p>
+
+                    <h4 class="card-title titalcard">Randall Schwartz</h4>
+
+                    <div class="btn">
+                        <p class="pe-5">Sr.Consultent</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="imgp-position"><img src="client-big.png" width="350px" class="modal-img">
+            <img src="icons8-play-button-64 (2).png" class="play-img">
+            <div class="ring3"></div>
+            <div class="ring4"></div>
+
+
+        </div>
+    </div>
+
+
+    <!--logo brand section-->
+    <div class="container-fluid">
+        <div class="itam1 logo"><img src="Charter Flight & Aviation School HTML Template_files/brand-1.png"></div>
+
+        <div class="itam2 logo"><img src="Charter Flight & Aviation School HTML Template_files/brand-2.png"></div>
+        <div class="itam3 logo"><img src="Charter Flight & Aviation School HTML Template_files/brand-3.png"></div>
+        <div class="itam4 logo"><img src="Charter Flight & Aviation School HTML Template_files/brand-4.png"></div>
+        <div class="itam5 logo"><img src="Charter Flight & Aviation School HTML Template_files/brand-5.png"></div>
+    </div>
+
+    <!--latest news section-->
+
+    <div class="latestdiv gap-2 pb-5 mb-5">
+        <blockquote>
+            <h4 class="fw-bold"><span style="color: #dcbb87;">Flaynext</span> blog</h4>
+        </blockquote>
+        <h1 class="fw-bold">Latest News From Us</h1>
+    </div>
+    <div class="row gap-5 ms-5 m-52 mb-5 pb-5">
+        <div class="col-md-3">
+            <div class="card shadow" style="width: 350px; left: 50px;">
+                <img src="blog-1.png" class="card-img-top">
+                <div class="card-body">
+                    <p class="comments">6 July 2023 <span class="commentposition">3 - Comments</span></p>
+                    <blockquote>
+                        <h4 class="card-title titalcard">Charter flight of the Death Penalty in America</h4>
+                    </blockquote>
+                    <p class="card-text">With a vast array of popular private planes to choose from, travelling by
+                        private jet charter is the most efficient</p>
+                    <div class="btn b">
+                        <a class="btn h3 ms-1 fw-bold" style="color: #dcbb87;"
+                            href="https://themeim.com/demo/flynext/blog-details.html">Read
+                            More -></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card  shadow" style="width: 350px; left: 70px;">
+                <img src="blog-2.png" class="card-img-top">
+                <div class="card-body">
+                    <p class="comments">25 July 2023 <span class="commentposition">11 - Comments</span></p>
+
+                    <blockquote>
+                        <h3 class="card-title titalcard">Our technology consistently deliver</h3>
+                    </blockquote>
+
+                    <p class="card-text">Private jet hire for leisure purposes allows yourself, your family and friends
+                        to travel in luxury, comfort and privacy.</p>
+                    <div class="btn b">
+                        <a class="btn h3 ms-1 fw-bold" style="color: #dcbb87;"
+                            href="https://themeim.com/demo/flynext/blog-details.html">Read
+                            More -></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-3">
+            <div class="card  shadow" style="width: 350px; left:80px;">
+                <img src="blog-3.png" class="card-img-top">
+                <div class="card-body">
+                    <p class="comments">11 August 2023 <span class="commentposition">7 - Comments</span></p>
+
+                    <blockquote>
+                        <h3 class="card-title titalcard">Search the world with ease and transparency</h3>
+                    </blockquote>
+
+                    <p class="card-text">It’s fast gaining in popularity as leisure time becomes increasingly precious
+                        and we value the experience of the journey</p>
+                    <div class="btn b">
+                        <a class="btn h3 ms-1 fw-bold" style="color: #dcbb87;"
+                            href="https://themeim.com/demo/flynext/blog-details.html">Read
+                            More -></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+    <!--last section of web site-->
+
+    <div class="container-fluid div1lastpart">
+        <div class="container" style="background-color: #19232d;">
+            <div class="top-area">
+                <div class="flex-row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="divarea">
+                            <div><img class="mb-3" src="logo-fly.png" width="200px"></div>
+                            <p>Flynext was founded in 1991 by a group of safety<br>-focused professionals who created
+                                The Wingman<br> Standard for rigorously vetting air charter<br> operators.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="top-area">
+                <div class="flex-row">
+                    <div class="col-xl-3 col-lg-3 col-md-6">
+                        <div class="divarea">
+                            <div class=" lestsubtital mt-4 fw-bold">EUROPE</div>
+                            <ul class="mt-2">
+                                <li class="btn fw-medium mb-2 text-light l-btn b">Europe 45 Gloucester Road</li>
+                                <li class="btn fw-medium text-light b">+44 (0)20 3671 5709</li>
+                                <li class="btn fw-medium text-light b">London DT1M 3BF</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="top-area">
+                <div class="flex-row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="divarea">
+                            <div class="lestsubtital mt-4 fw-bold">ASIA & PACIFIC</div>
+                            <ul class="mt-2">
+                                <li class="btn fw-medium mb-2 text-light b">2473 Red Road Ste 98</li>
+                                <li class="btn fw-medium text-light b">Singapore SG</li>
+                                <li class="btn fw-medium text-light b">+ 1 623 211 6319</li>
+
+                            </ul>
+
+                            <div class="top-area2">
+                                <div class="flex-row">
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="divarea">
+                                            <div class="lestsubtital mt-4 fw-bold">NORTH AMERICA</div>
+                                            <ul class="mt-2">
+                                                <li class="btn fw-medium mb-2 text-light b">Europe 45 Gloucester Road
+                                                </li>
+                                                <li class="btn fw-medium text-light b">London DT1M 3BF</li>
+                                                <li class="btn fw-medium text-light b">+44 (0)20 3671 5709</li>
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-flex lastdiv1">
+        <div class="lastdiv2 rounded-5 col-xl-12 col-lg-6 col-md-3 col-sm-3">
+            <div class="col-lg-12 col-md-6 col-sm-3">
+                <h4 class="tital4 fw-bold">Get started</h4>
+                <ul class="mt-2 ullist col-lg-12 col-md-6 col-sm-3">
+                    <li class="btn fw-bold Active fw-medium mb-2 b"><a href="#" class=" linklast">Private
+                                jet </a></li>
+                    <li class="btn fw-bold Active mb-2 b"><a href="#" class="linklast">Register</a></li>
+                    <li class="btn fw-bold link-light b"><a href="#" class=" linklast">Current Jet
+                                Deals</a></li>
+                    <li class="btn fw-bold b"><a href="#" class=" linklast2">Flynext mobile app</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-3 divposition">
+                <h4 class="tital4 fw-bold">How it works</h4>
+                <ul class="mt-2 ullist col-lg-12 col-md-6 col-sm-3">
+                    <li class="btn fw-bold Active fw-medium mb-2 b"><a href="#" class=" linklast">How it works
+                             </a></li>
+                    <li class="btn fw-bold Active mb-2 b"><a href="#" class="linklast">Ways to fly
+                          </a></li>
+                    <li class="btn fw-bold link-light b"><a href="#" class=" linklast">Ways to buy
+                          </a></li>
+                    <li class="btn fw-bold b"><a href="#" class=" linklast2">Private charter
+                           </a></li>
+                    <li class="btn fw-bold b"><a href="#" class=" linklast2">Private Jet Cost
+                        </a></li>
+                </ul>
+            </div>
+
+
+            <div class="col-lg-3 col-md-6 col-sm-3 divposition2">
+                <h4 class="tital4 fw-bold">About us</h4>
+                <ul class="mt-2 ullist col-lg-12 col-md-6 col-sm-3">
+                    <li class="btn fw-bold Active fw-medium mb-2 b"><a href="#"class="linklast">About us
+                        </a></li>
+                    <li class="btn fw-bold Active mb-2 b"><a href="#" class="linklast">News & press</a>
+                    </li>
+                    <li class="btn fw-bold link-light b"><a href="#" class="linklast">Blog </a></li>
+                    <br>
+                    <li class="btn fw-bold b"><a href=""class="linklast2">FAQs</a></li>
+                    <br>
+                    <li class="btn fw-bold b"><a href="" class="linklast2">Careers
+                            </a></li>
+                </ul>
+            </div>
+
+            <div class="divposition3">
+                <h4 class="tital4 fw-bold col-sm-3">Newsletter</h4>
+                <p class="plast text-light fw-medium mt-2">Flynext was founded in 1991 by a group <br>of safety-focused
+                    professionals erators.</p>
+
+
+                <!--last form section of website-->
+
+                <div class="lastform ">
+                    <form>
+                        <div class="input-group mb-3">
+                            <input type="email" class="form-control" placeholder="Enter Email">
+                        </div>
+                        <form>
+                            <div class="input-group sub-us-btn rounded-2 sub-us-btn1">
+                                <button class="btn fw-bold">Subscribe Us<img src="icons8-airline-64 (1).png"
+                                        width="20px"></button>
+                            </div>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+
+</html>
